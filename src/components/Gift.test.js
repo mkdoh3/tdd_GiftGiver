@@ -3,9 +3,9 @@ import { shallow } from 'enzyme';
 import Gift from './Gift';
 
 describe('Gift', () => {
-  const mockRemove = jest.fn();
   const id = 1;
-  const props = { gift: {id: 1}, removeGift: mockRemove};
+  const mockRemove = () => jest.fn(id);
+  const props = { removeGift: mockRemove };
   const gift = shallow(<Gift {...props} />);
 
   it('renders properly', () => {
@@ -40,9 +40,9 @@ describe('Gift', () => {
       gift.find('.btn-remove').simulate('click');
 
       it('it calls the remove gift callback', () => {
-        expect(mockRemove).toHaveBeenCalledWith(id);
-      })
-    })
-  })
+        expect(mockRemove).toHaveBeenCalledWith();
+      });
+    });
+  });
 
 });

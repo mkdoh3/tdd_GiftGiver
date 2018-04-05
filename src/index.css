@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  padding: 5% 20%;
+}
+
+.gift {
+  border: 2px solid burlywood;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 4rem;
+}
+
+Button {
+  margin: 2rem;
+}

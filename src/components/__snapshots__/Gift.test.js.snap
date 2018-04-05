@@ -5,11 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Gift
-    gift={
-        Object {
-            "id": 1,
-          }
-    }
     removeGift={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -76,6 +71,7 @@ ShallowWrapper {
           Remove Gift
 </Button>,
       ],
+      "className": "gift",
     },
     "ref": null,
     "rendered": Array [
@@ -313,6 +309,7 @@ ShallowWrapper {
             Remove Gift
 </Button>,
         ],
+        "className": "gift",
       },
       "ref": null,
       "rendered": Array [
